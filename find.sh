@@ -6,3 +6,6 @@ find /arch/logi/comarch_old/testy -type f -newermt "2016-06-28 00:00:00" \! -new
 
 #find in solaris
 find [path] -type f -exec grep '[pattern]' /dev/null {} +
+
+#Find files that have been modified on your system in the past 60 minutes via commandlinefu.com
+sudo find / -mmin 60 -type f
